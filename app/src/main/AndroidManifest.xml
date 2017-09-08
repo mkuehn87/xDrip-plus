@@ -322,6 +322,16 @@
                 android:resource="@xml/x_drip_widget_info" />
         </receiver>
 
+        <receiver android:name=".xDripGearWidget" android:label="xDrip+ for Gear">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/x_drip_gear_widget_info" />
+        </receiver>
+
         <service
             android:name=".WidgetUpdateService"
             android:enabled="true"
